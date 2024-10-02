@@ -39,7 +39,7 @@ function Home() {
 
  // Hook d'effet
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-snowy-omega.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies);
